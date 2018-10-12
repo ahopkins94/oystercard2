@@ -1,13 +1,12 @@
 class Journey
 
-  attr_reader :entry_station, :exit_station
+  attr_reader :in_journey
 
-  def touch_in(station)
-    @entry_station = station
+  def initialize
+    @in_journey = true
   end
 
-  def touch_out(station)
-    @exit_station = station
+  def touch_in(station)
   end
 
 end
